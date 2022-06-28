@@ -33,3 +33,8 @@ def canUnlockAll(boxes):
                 pass
 
     return set(range(len(boxes))).issubset(opened)
+
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
