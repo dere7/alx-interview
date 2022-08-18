@@ -9,14 +9,10 @@ class TestIslandPerimeter(unittest.TestCase):
 
     def test_island_perimeter(self):
         """tests island_perimeter"""
-        grid = [
-            [0, 0, 0, 0, 0, 0],
-            [0, 1, 0, 0, 0, 0],
-            [0, 1, 0, 0, 0, 0],
-            [0, 1, 1, 1, 0, 0],
-            [0, 0, 0, 0, 0, 0]
-        ]
-        self.assertEqual(island_perimeter(grid), 12)
+        grid = [[0, 1, 0, 0], [1, 1, 1, 0], [0, 1, 0, 0], [1, 1, 0, 0]]
+        result = island_perimeter(grid)
+        self.assertEqual(result, 16)
+        print(f'result is equal : {result}')
 
 
 if __name__ == '__main__':
